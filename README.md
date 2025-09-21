@@ -12,6 +12,7 @@ How to verify after deployment (3–10 minutes):
 1) In Azure Portal, open the new Function App, copy the default hostname (Overview page)
 2) Open in a browser:
 
+
 ```
 https://<your-func-app-hostname>/api/hello?name=MONET
 ```
