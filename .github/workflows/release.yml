@@ -25,7 +25,10 @@ jobs:
       - name: Create deployment package
         run: |
           cd src
-          zip -r ../function-app.zip . -x "node_modules/*" "*.ts" "tsconfig.json"
+          # Install only production dependencies
+          npm ci --production
+          # Create ZIP including node_modules
+          zip -r ../function-app.zip . -x "*.ts" "tsconfig.json" "local.settings.json"
           
       - name: Create Release
         uses: softprops/action-gh-release@v1
