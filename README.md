@@ -1,8 +1,8 @@
-# MONET — One-Click Azure Functions (Node.js)
+# dummy — One-Click Azure Functions (Node.js)
 
 ## 🚀 One-Click Deploy to Azure
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsundeep-dayalan%2FMONET%2Fmain%2Fazuredeploy%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsundeep-dayalan%2Fdummy%2Fmain%2Fazuredeploy%2Fazuredeploy.json)
 
 What this does:
 - Provisions a Storage Account, a Consumption Plan, an Azure Functions app (Node 18), and Application Insights
@@ -14,13 +14,13 @@ How to verify after deployment (3–10 minutes):
 
 
 ```
-https://<your-func-app-hostname>/api/hello?name=MONET
+https://<your-func-app-hostname>/api/hello?name=dummy
 ```
 
 Expected response:
 
 ```
-Hello, MONET! This is a Node.js TypeScript function deployed from GitHub.
+Hello, dummy! This is a Node.js TypeScript function deployed from GitHub.
 ```
 
 Local development (from `src/`):
@@ -35,11 +35,11 @@ Troubleshooting:
 - Check Function App > Deployment Center for Oryx build logs
 - Required app settings are set by the template: `FUNCTIONS_WORKER_RUNTIME=node`, `WEBSITE_NODE_DEFAULT_VERSION=~18`, `SCM_DO_BUILD_DURING_DEPLOYMENT=true`, `WEBSITE_PROJECT_PATH=src`
 
-# Monet Financial Management App
+# dummy Financial Management App
 
 ## Deploy to Azure
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsundeep-dayalan%2FMONET%2Fmain%2Fazuredeploy%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsundeep-dayalan%2Fdummy%2Fmain%2Fazuredeploy%2Fazuredeploy.json)
 
 **Choose your version:**
 - Latest stable release (recommended)
@@ -51,8 +51,8 @@ Troubleshooting:
 ### Free Tier Deploy (If Available)
 Want to try the free tier first? Use our intelligent deployment script:
 ```bash
-git clone https://github.com/sundeep-dayalan/MONET
-cd MONET/deployments
+git clone https://github.com/sundeep-dayalan/dummy
+cd dummy/deployments
 ./deploy-with-fallback.sh
 ```
 **Cost**: ~$0.08/month (if free tier available) | **Fallback**: Automatic to standard tier
@@ -63,7 +63,7 @@ This project provides a comprehensive solution for financial management, built w
 
 ## 🚀 One-Click Deployment to Azure
 
-Deploy the complete MONET Financial Management App infrastructure to Azure with a single click! This deployment automatically provisions all necessary Azure resources and prepares your application for immediate use.
+Deploy the complete dummy Financial Management App infrastructure to Azure with a single click! This deployment automatically provisions all necessary Azure resources and prepares your application for immediate use.
 
 ### 🏗️ What gets deployed:
 
@@ -94,7 +94,7 @@ Deploy the complete MONET Financial Management App infrastructure to Azure with 
 1.  **Click the Deploy to Azure button above** ⬆️
 2.  **Sign in to Azure Portal** (if not already signed in)
 3.  **Configure deployment parameters:**
-    - Project Name: `monet` (or customize)
+    - Project Name: `dummy` (or customize)
     - Location: Choose your preferred Azure region
     - Environment: `prod`, `dev`, or `staging`
     - Static Web App Location: Choose from available regions
@@ -108,12 +108,12 @@ After the infrastructure deployment completes:
 1. **Note the output URLs** from the deployment results
 2. **Configure Azure AD applications** (see post-deployment guide)
 3. **Deploy application code** to Function App and Static Web App
-4. **Access your MONET app** via the provided Static Web App URL
+4. **Access your dummy app** via the provided Static Web App URL
 
 ### 📊 What you'll get:
 
-- **Frontend URL**: `https://monet-[suffix]-web.azurestaticapps.net`
-- **Backend API URL**: `https://monet-[suffix]-api.azurewebsites.net`
+- **Frontend URL**: `https://dummy-[suffix]-web.azurestaticapps.net`
+- **Backend API URL**: `https://dummy-[suffix]-api.azurewebsites.net`
 - **Cosmos DB**: Ready with dev/prod databases
 - **Key Vault**: Configured for secure secrets management
 - **Monitoring**: Application Insights ready for observability
