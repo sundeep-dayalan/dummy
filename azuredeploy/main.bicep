@@ -8,7 +8,7 @@ param location string = resourceGroup().location
 param repoURL string = 'https://github.com/sundeep-dayalan/MONET'
 
 @description('The branch of the repository to deploy.')
-param branch string = 'dummy'
+param branch string = 'main'
 
 // Generate unique names for resources that require it
 var uniqueSuffix = uniqueString(resourceGroup().id)
